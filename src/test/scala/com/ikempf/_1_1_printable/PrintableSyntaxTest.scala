@@ -7,11 +7,11 @@ import org.scalatest.{FlatSpec, Matchers}
 class PrintableSyntaxTest extends FlatSpec with Matchers {
 
   "PrintableOps" should "format string" in {
-    "test".format2 should equal("test")
+    "test".format() should equal("test")
   }
 
   it should "format int" in {
-    5.format2 should equal("5")
+    5.format() should equal("5")
   }
 
 }

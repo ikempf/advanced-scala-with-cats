@@ -10,4 +10,9 @@ object PrintableInstances {
     override def format(a: Int): String = a.toString
   }
 
+  implicit val catsPrintable = new Printable[Cat] {
+    override def format(cat: Cat): String =
+      s"${cat.name.toUpperCase} is a ${cat.age} year-old ${cat.color.toUpperCase} cat."
+  }
+
 }
