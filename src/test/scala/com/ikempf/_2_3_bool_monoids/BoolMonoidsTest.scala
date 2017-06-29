@@ -17,5 +17,4 @@ class BoolMonoidsTest extends FlatSpec with Checkers {
     check(MonoidLaws(boolGen)(BoolMonoids.andMonoid))
   }
 
-
 }
