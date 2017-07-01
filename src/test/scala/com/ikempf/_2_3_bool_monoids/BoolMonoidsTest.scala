@@ -1,6 +1,6 @@
 package com.ikempf._2_3_bool_monoids
 
-import com.ikempf._2_3_bool_monoids.BoolMonoids.orMonoid
+import com.ikempf._2_3_bool_monoids.BoolMonoids.{andMonoid, orMonoid}
 import org.scalacheck.Gen
 import org.scalatest.FlatSpec
 import org.scalatest.prop.Checkers
@@ -14,7 +14,7 @@ class BoolMonoidsTest extends FlatSpec with Checkers {
   }
 
   "AndMonoid" should "satisfy monoid laws" in {
-    check(MonoidLaws(boolGen)(BoolMonoids.andMonoid))
+    check(MonoidLaws(boolGen)(andMonoid))
   }
 
 }
