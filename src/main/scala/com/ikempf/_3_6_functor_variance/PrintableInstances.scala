@@ -1,4 +1,4 @@
-package com.ikempf._3_6_printable
+package com.ikempf._3_6_functor_variance
 
 object PrintableInstances {
 
