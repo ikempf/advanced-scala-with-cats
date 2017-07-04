@@ -8,5 +8,5 @@ lazy val root = (project in file(".")).
       version      := "0.1.0-SNAPSHOT"
     )),
     name := "advanced-scala-with-cats",
-    libraryDependencies += List(scalaTest % Test, cats)
+    libraryDependencies ++= List(scalaTest % Test, cats)
   )
