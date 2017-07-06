@@ -2,6 +2,7 @@ package com.ikempf._4_6_writer_monad
 
 import cats.data.Writer
 import cats.instances.list.catsKernelStdMonoidForList
+import cats.syntax.writer._
 
 object Factorial {
 
@@ -19,7 +20,8 @@ object Factorial {
       Writer.value[List[String], Int](1)
     else
       factorialW(n - 1).map(_ * n))
-    ans.flatMap(i => Writer.tell(List(s"fact $n $i")).map(_ => i))
+
+    ans.flatMap(i => List(s"fact $n $i").tell.map(_ => i))
   }
 
 }
