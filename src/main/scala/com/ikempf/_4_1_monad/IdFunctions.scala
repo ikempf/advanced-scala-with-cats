@@ -1,9 +1,11 @@
 package com.ikempf._4_1_monad
 
-import cats.Id
+import cats.{Eval, Id}
 
+class Test {
+  Eval.later()
+}
 object IdFunctions {
-
 
   def pure[A](a: A): Id[A] =
     a
