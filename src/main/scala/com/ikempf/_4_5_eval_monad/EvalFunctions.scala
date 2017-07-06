@@ -1,4 +1,4 @@
-package com.ikempf._4_5_eval
+package com.ikempf._4_5_eval_monad
 
 import cats.Eval
 

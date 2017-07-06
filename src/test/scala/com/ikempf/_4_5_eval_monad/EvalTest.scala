@@ -1,6 +1,6 @@
-package com.ikempf._4_5_eval
+package com.ikempf._4_5_eval_monad
 
-import com.ikempf._4_5_eval.EvalFunctions.foldRight
+import com.ikempf._4_5_eval_monad.EvalFunctions.foldRight
 import org.scalatest.{FlatSpec, Matchers}
 
 class EvalTest extends FlatSpec with Matchers {
