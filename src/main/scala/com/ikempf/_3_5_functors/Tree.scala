@@ -2,7 +2,6 @@ package com.ikempf._3_5_functors
 
 import cats.Functor
 
-
 sealed trait Tree[+A]
 
 object Tree {

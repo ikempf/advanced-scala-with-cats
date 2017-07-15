@@ -1,13 +1,10 @@
 package com.ikempf._4_9_custom_monads
 
 import cats.Monad
-import com.ikempf._3_5_functors.Tree
-import com.ikempf._3_5_functors.Tree.{Branch, Leaf}
 import cats.syntax.flatMap._
 import cats.syntax.functor._
-
-import scala.annotation.tailrec
-import cats.syntax.either._
+import com.ikempf._3_5_functors.Tree
+import com.ikempf._3_5_functors.Tree.{Branch, Leaf}
 
 object TreeMonad {
 
