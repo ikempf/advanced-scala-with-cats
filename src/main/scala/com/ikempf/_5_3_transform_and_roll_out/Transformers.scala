@@ -2,11 +2,13 @@ package com.ikempf._5_3_transform_and_roll_out
 
 import cats.data.EitherT
 import cats.syntax.either._
-
+import cats.instances.future._
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 
 object Transformers {
+
   type Response[A] = Future[Either[String, A]]
   type ResponseT[A] = EitherT[Future, String, A]
 
