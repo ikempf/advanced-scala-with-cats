@@ -32,6 +32,7 @@ object StateMonad {
 
   def evalAll(input: List[String]): CalcState[Int] = {
     input match {
+      case Nil => State.pure(0)
       case h :: Nil => evalOne(h)
       case h :: t => evalOne(h).flatMap(_ => evalAll(t))
     }

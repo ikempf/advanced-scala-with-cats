@@ -13,7 +13,7 @@ class EvalTest extends FlatSpec with Matchers {
     val sum = foldRight(ints, 0)(_ + _)
 
     // Then
-    sum should equal(50000)
+    sum.value should equal(50000)
   }
 
 }
